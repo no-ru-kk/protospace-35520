@@ -26,7 +26,7 @@ class PrototypesController < ApplicationController
   end
 
   def edit
-    @prototype = Prototype.find(params[:id])
+    @prototype = Prototype.find(params[:id][:image.attached])
     unless user_signed_in? && current_user.id == @prototype.user_id
       redirect_to action: :index
     end
