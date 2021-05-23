@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: protospace_35520_production
-  username: protospace_35520
-  password: <%= ENV['PROTOSPACE_35520_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
