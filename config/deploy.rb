@@ -3,10 +3,10 @@
 lock "~> 3.16.0"
 
 # Capistranoのログの表示に利用する
-set :application, "furima-35520"
+set :application, "protospace-35520"
 
 # どのリポジトリからアプリをpullするかを指定する
-set :repo_url, 'git@github.com:no-ru-kk/furima-35520.git'
+set :repo_url, 'git@github.com:no-ru-kk/protospace-35520.git'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
